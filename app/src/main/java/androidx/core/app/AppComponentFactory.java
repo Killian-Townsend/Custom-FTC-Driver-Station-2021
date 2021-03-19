@@ -33,7 +33,7 @@ public class AppComponentFactory extends AppComponentFactory {
     } catch (InvocationTargetException invocationTargetException) {
     
     } catch (NoSuchMethodException noSuchMethodException) {}
-    throw new RuntimeException("Couldn't call constructor", noSuchMethodException);
+    throw new RuntimeException("Couldn't call constructor", NoSuchMethodException);
   }
   
   public final ContentProvider instantiateProvider(ClassLoader paramClassLoader, String paramString) throws InstantiationException, IllegalAccessException, ClassNotFoundException {

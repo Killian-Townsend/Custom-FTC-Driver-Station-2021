@@ -4,6 +4,11 @@
     android:versionCode="1"
     android:versionName="14.0 Custom | Beta 0.1">
 
+    <uses-sdk
+        android:targetSdkVersion="26"
+        android:minSdkVersion="23"
+        android:maxSdkVersion="28"/>
+
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" android:required="true"/>
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" android:required="true"/>
     <uses-permission android:name="android.permission.WAKE_LOCK" android:required="true"/>
