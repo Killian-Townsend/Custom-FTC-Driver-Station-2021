@@ -666,11 +666,11 @@ public class ProjectsUtil {
       label38: while (true) {
         bool = null;
         if (i != 1) {
-          boolean bool1 = bool;
+          Boolean bool1 = bool;
           if (i == 2) {
             bool1 = bool;
             bool = null;
-            boolean bool2 = bool;
+            Boolean bool2 = bool;
             try {
               if (xmlPullParser.getName().equals("Enabled")) {
                 i = 0;
@@ -707,14 +707,14 @@ public class ProjectsUtil {
               } 
               continue;
             } catch (IOException iOException) {
-              null = bool2;
+              bool2 = null;
             }
             bool = null;
           } else {
             continue;
           } 
         } else {
-          return null;
+          return false;
         } 
         StringBuilder stringBuilder1 = new StringBuilder();
         stringBuilder1.append("ProjectsUtil.isProjectEnabled(\"");
@@ -732,7 +732,7 @@ public class ProjectsUtil {
     stringBuilder.append(paramString1);
     stringBuilder.append("\", ...) - failed to parse xml.");
     RobotLog.e(stringBuilder.toString());
-    RobotLog.logStackTrace((Throwable)xmlPullParserException);
+    RobotLog.logStackTrace((Throwable)XmlPullParserException);
     return bool;
   }
   
