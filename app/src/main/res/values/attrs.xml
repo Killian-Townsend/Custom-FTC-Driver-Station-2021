@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!--
     <attr name="actionBarDivider" format="reference" />
     <attr name="actionBarItemBackground" format="reference" />
     <attr name="actionBarPopupTheme" format="reference" />
@@ -62,6 +63,7 @@
         <enum name="uniform" value="1" />
     </attr>
     <attr name="background" format="reference" />
+    -->
     <attr name="backgroundAlmostDark" format="color" />
     <attr name="backgroundDark" format="color" />
     <attr name="backgroundLight" format="color" />
@@ -72,6 +74,7 @@
     <attr name="backgroundSplit" format="reference|color" />
     <attr name="backgroundStacked" format="reference|color" />
     <attr name="backgroundTint" format="color" />
+    <!--
     <attr name="backgroundTintMode">
         <enum name="add" value="16" />
         <enum name="multiply" value="14" />
@@ -80,8 +83,10 @@
         <enum name="src_in" value="5" />
         <enum name="src_over" value="3" />
     </attr>
+    -->
     <attr name="backgroundVeryDark" format="color" />
     <attr name="backgroundVeryVeryDark" format="color" />
+    <!--
     <attr name="barLength" format="dimension" />
     <attr name="borderlessButtonStyle" format="reference" />
     <attr name="buttonBarButtonStyle" format="reference" />
@@ -96,9 +101,13 @@
         <flag name="top" value="0x00000030" />
     </attr>
     <attr name="buttonIconDimen" format="dimension" />
+     -->
     <attr name="buttonOutline" format="reference" />
+    <!--
     <attr name="buttonPanelSideLayout" format="reference" />
+    -->
     <attr name="buttonStop" format="reference" />
+    <!--
     <attr name="buttonStyle" format="reference" />
     <attr name="buttonStyleSmall" format="reference" />
     <attr name="buttonTint" format="color" />
@@ -112,9 +121,11 @@
     </attr>
     <attr name="checkboxStyle" format="reference" />
     <attr name="checkedTextViewStyle" format="reference" />
+    -->
     <attr name="circleMedium" format="reference" />
     <attr name="circleMediumMedium" format="reference" />
     <attr name="circleVeryVeryDark" format="reference" />
+    <!--
     <attr name="closeIcon" format="reference" />
     <attr name="closeItemLayout" format="reference" />
     <attr name="collapseContentDescription" format="string" />
@@ -182,9 +193,11 @@
     <attr name="editTextStyle" format="reference" />
     <attr name="elevation" format="dimension" />
     <attr name="expandActivityOverflowButtonDrawable" format="reference" />
+    -->
     <attr name="feedbackBackground" format="color" />
     <attr name="feedbackBorder" format="color" />
     <attr name="feedbackShape" format="reference" />
+    <!--
     <attr name="firstBaselineToTopHeight" format="dimension" />
     <attr name="font" format="reference" />
     <attr name="fontFamily" format="string" />
@@ -229,9 +242,11 @@
     <attr name="itemPadding" format="dimension" />
     <attr name="lastBaselineToBottomHeight" format="dimension" />
     <attr name="layout" format="reference" />
+    -->
     <attr name="lineBright" format="color" />
     <attr name="lineHeight" format="dimension" />
     <attr name="lineLight" format="color" />
+    <!--
     <attr name="listChoiceBackgroundIndicator" format="reference" />
     <attr name="listChoiceIndicatorMultipleAnimated" format="reference" />
     <attr name="listChoiceIndicatorSingleAnimated" format="reference" />
@@ -336,9 +351,12 @@
     <attr name="textAppearanceSearchResultSubtitle" format="reference" />
     <attr name="textAppearanceSearchResultTitle" format="reference" />
     <attr name="textAppearanceSmallPopupMenu" format="reference" />
+    -->
     <attr name="textBright" format="color" />
+    <!--
     <attr name="textColorAlertDialogListItem" format="reference|color" />
     <attr name="textColorSearchUrl" format="reference|color" />
+    -->
     <attr name="textLight" format="color" />
     <attr name="textLocale" format="string" />
     <attr name="textMedium" format="color" />
@@ -349,6 +367,7 @@
     <attr name="textVeryDark" format="color" />
     <attr name="textVeryVeryDark" format="color" />
     <attr name="textWhite" format="color" />
+    <!--
     <attr name="theme" format="reference" />
     <attr name="thickness" format="dimension" />
     <attr name="thumbTextPadding" format="dimension" />
@@ -371,7 +390,9 @@
         <enum name="src_in" value="5" />
         <enum name="src_over" value="3" />
     </attr>
+    -->
     <attr name="timerSwitchOff" format="reference" />
+    <!--
     <attr name="tint" format="color" />
     <attr name="tintMode">
         <enum name="add" value="16" />
@@ -419,4 +440,5 @@
     <attr name="windowMinWidthMajor" format="dimension|fraction" />
     <attr name="windowMinWidthMinor" format="dimension|fraction" />
     <attr name="windowNoTitle" format="boolean" />
+    -->
 </resources>

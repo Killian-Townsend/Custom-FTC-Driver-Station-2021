@@ -219,7 +219,7 @@ public class ProjectsUtil {
     stringBuilder.append(paramString1);
     stringBuilder.append("\", ...) - failed to parse xml.");
     RobotLog.e(stringBuilder.toString());
-    RobotLog.logStackTrace((Throwable)xmlPullParserException);
+    RobotLog.logStackTrace((Throwable)XmlPullParserException);
     return new OpModeMeta(paramString1, flavor1, str2);
   }
   
@@ -657,44 +657,44 @@ public class ProjectsUtil {
   }
   
   private static boolean isProjectEnabled(String paramString1, String paramString2) {
-    boolean bool = true;
+    Boolean bool = true;
     try {
       XmlPullParser xmlPullParser = Xml.newPullParser();
       xmlPullParser.setInput(new StringReader(removeNewLines(paramString2)));
       int i = xmlPullParser.getEventType();
       bool = true;
       label38: while (true) {
-        null = bool;
+        bool = null;
         if (i != 1) {
           boolean bool1 = bool;
           if (i == 2) {
             bool1 = bool;
-            null = bool;
+            bool = null;
             boolean bool2 = bool;
             try {
               if (xmlPullParser.getName().equals("Enabled")) {
                 i = 0;
                 while (true) {
                   bool1 = bool;
-                  null = bool;
+                  bool = null;
                   bool2 = bool;
                   if (i < xmlPullParser.getAttributeCount()) {
-                    null = bool;
+                    bool = null;
                     bool2 = bool;
                     paramString2 = xmlPullParser.getAttributeName(i);
-                    null = bool;
+                    bool = null;
                     bool2 = bool;
                     String str = xmlPullParser.getAttributeValue(i);
-                    null = bool;
+                    bool = null;
                     bool2 = bool;
                     bool1 = bool;
                     if (paramString2.equals("value")) {
-                      null = bool;
+                      bool = null;
                       bool2 = bool;
                       bool1 = Boolean.parseBoolean(str);
                     } 
                   } else {
-                    null = bool1;
+                    bool = null;
                     bool2 = bool1;
                     i = xmlPullParser.next();
                     bool = bool1;
@@ -708,7 +708,7 @@ public class ProjectsUtil {
               continue;
             } catch (IOException iOException) {
               null = bool2;
-            } catch (XmlPullParserException null) {}
+            }
             bool = null;
           } else {
             continue;
@@ -721,7 +721,7 @@ public class ProjectsUtil {
         stringBuilder1.append(paramString1);
         stringBuilder1.append("\", ...) - failed to parse xml.");
         RobotLog.e(stringBuilder1.toString());
-        RobotLog.logStackTrace((Throwable)xmlPullParserException);
+        RobotLog.logStackTrace((Throwable)XmlPullParserException);
         return bool;
       } 
     } catch (IOException iOException) {
