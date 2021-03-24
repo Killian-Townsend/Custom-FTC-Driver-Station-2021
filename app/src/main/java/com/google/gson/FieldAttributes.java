@@ -11,7 +11,7 @@ public final class FieldAttributes {
   private final Field field;
   
   public FieldAttributes(Field paramField) {
-    .Gson.Preconditions.checkNotNull(paramField);
+    Gson.Preconditions.checkNotNull(paramField);
     this.field = paramField;
   }
   
